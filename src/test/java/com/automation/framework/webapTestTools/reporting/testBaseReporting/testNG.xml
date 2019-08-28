@@ -1,0 +1,17 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name=" Test Suite">
+
+    <parameter name="OS" value="Windows"/>
+    <parameter name="browser" value="Chrome"/>
+    <test name="LoginTest">
+        <classes>
+            <class name="com.automation.framework.webapTestTools.reporting.testBaseReporting.BaseReportingTest">
+                <methods>
+                    <include name="testMethod1" description="TEST CASE 1 DESCRIPTION"/>
+                    <include name="testMethod2" description="TEST CASE 2 DESCRIPTION"/>
+                    <include name="testMethod3" description="TEST CASE 3 DESCRIPTION"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
