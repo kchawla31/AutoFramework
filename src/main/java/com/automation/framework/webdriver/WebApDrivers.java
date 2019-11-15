@@ -26,7 +26,7 @@ public class WebApDrivers {
         if (browser.equalsIgnoreCase("CHROME")) {
 
             // Set Driver path:-
-            System.setProperty("webdriver.chrome.driver", "./src/main/resources/drivers/chromedriver.exe");
+            System.setProperty("webdriver.chrome.driver", "./src/main/resources/drivers/chromedriver");
 
             // Set Custom download file path for any file that needs to be download online:-
             String downloadFilePath = System.getProperty("user.dir") + "/";
