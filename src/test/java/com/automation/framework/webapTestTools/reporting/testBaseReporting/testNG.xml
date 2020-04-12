@@ -5,7 +5,7 @@
     <parameter name="browser" value="Chrome"/>
     <test name="LoginTest">
         <classes>
-            <class name="com.automation.framework.webapTestTools.reporting.testBaseReporting.BaseReportingTest">
+            <class name="com.apple">
                 <methods>
                     <include name="testMethod1" description="TEST CASE 1 DESCRIPTION"/>
                     <include name="testMethod2" description="TEST CASE 2 DESCRIPTION"/>

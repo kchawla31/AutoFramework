@@ -1,0 +1,24 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name=" Test Suite" parallel="tests" thread-count="2">
+
+    <parameter name="OS" value="Windows"/>
+    <parameter name="browser" value="Chrome"/>
+    <test name="LoginTest">
+        <classes>
+            <class name="com.automation.framework.webapTestTools.reporting.com.automation.framework.test.LoginTests">
+                <methods>
+                    <include name="facebooklaunch"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+    <test name="LoginTest2">
+        <classes>
+            <class name="com.automation.framework.webapTestTools.reporting.com.automation.framework.test.LoginTests">
+                <methods>
+                    <include name="facebooklaunch2"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
