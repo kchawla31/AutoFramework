@@ -23,12 +23,15 @@ public class LoginTests extends BaseClass {
         facebook.login("saaru", "saaru224");
     }
 
-
-    public void clickOnItem(String itermName) {
-
-        By xpath = By.xpath("//div[normalize-space(text())='" + itermName + "']/following-sibling::*//a");
-
+    @Test
+    public void facebooklaunch2() throws Exception {
+        facebook = new FacebookLogin(uiTestTools.get());
+        facebook.launchURL("https://www.facebook.com");
+        facebook.login("saaru", "saaru224");
     }
+
+
+
 
 
 
